@@ -1,4 +1,5 @@
-The Blitz Community webpage.
+The Blitz Community webpage.\
 A connection point to all Blitz languages.
 
-Edit index.hml
+Edit index.html\
+https://blitz-community.github.io/web
