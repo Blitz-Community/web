@@ -1,7 +1,3 @@
-## Blit Community project
-
-Discussions and code by and from the community.
-
 ### BlitzMax
 
 * [Wiki](./../../../BlitzMax/wiki)
