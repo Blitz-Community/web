@@ -1,4 +1,4 @@
-## BlitzMax Community project
+## Blit Community project
 
 Discussions and code by and from the community.
 
