@@ -1,0 +1,195 @@
+
+/*
+  TIMELINE
+*/
+
+/* TIMELINE PANEL */
+
+/* Timeline - Years */
+
+.timeline-wrapper {
+    overflow-x: auto;
+    width:100%;
+}
+.timeline {
+    display: table;
+  overflow-x: auto;
+    width:100%;
+}
+.timeline .y-axis {
+  display: table-row;
+  border-bottom: 1px solid var(--secondarydark);
+
+}
+.timeline .y-axis div {
+  display: table-cell;
+  width: 100px;
+min-width: 100px;
+  text-align:center;
+  color: var(--secondary);
+  font-size: 11px;
+}
+.timeline .y-axis div:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  height: 10px;
+  width:50px;
+  border-left: 1px solid var(--secondarydark);
+  border-right: 1px solid var(--secondarydark);
+}
+
+
+.xtimeline {
+  display:flex;
+  flex-direction: column;
+  overflow-x: auto;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: var(--secondarylite);
+  margin:10px;
+  min-width:0;
+  min-height:0;
+}
+.tximeline .y-axis {
+  display: block;
+  border-bottom: 1px solid var(--secondarydark);
+  margin-left: -25px;
+}
+.tixmeline .y-axis > div {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  text-align:center;
+  color: #868686;
+  font-size: 11px;
+  width: 100px;
+  flex-shrink: 0;
+
+}
+.tximeline .y-axis div:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  height: 10px;
+  width:50px;
+  border-left: 1px solid var(--secondarydark);
+  border-right: 1px solid var(--secondarydark);
+}
+
+/* Display last year */
+/*.timeline .y-axis li:last-child {
+  width: 10px ;
+}
+*/
+
+/*
+.timeline .events {
+  display:flex;
+  flex-direction: column;
+}
+.timeline .events .Y2000 {
+  margin-left: 0px;
+}
+.timeline .events .Y2001 {
+  margin-left: 50px;
+}
+.timeline .events .Y2004 {
+  margin-left: 200px;
+}
+.timeline .events .Y2011 {
+  margin-left: 500px;
+}
+.timeline .events .blitzbasic2d {
+  --from: 2000;
+  --to: 2003;
+  --color: red;
+}
+.timeline .events .blitz3d {
+  --from: 2001;
+  --to: 2008;
+  --color: green;
+}
+.timeline .events .blitzplus {
+  --from: 2003;
+  --to: 2012;
+  --color: darkred;
+}
+.timeline .events .blitzmax {
+  --from: 2004;
+  --to: 2012;
+  --color: blue;
+}
+.timeline .events .blitzmaxng {
+  --from: 2020;
+  --to: 2022;
+  --color: darkblue;
+}
+.timeline .events .monkey {
+  --from: 2011;
+  --to: 2012;
+  --color: yellow;
+}
+.timeline .events .cerberus {
+  --from: 2012;
+  --to: 2022;
+  --color: darkkhaki;
+}
+.timeline .events .monkey2 {
+  --from: 2011;
+  --to: 2012;
+  --color: purple;
+}
+.timeline .events .wonkey {
+  --from: 2011;
+  --to: 2012;
+  --color: indigo;
+}
+.timeline .events div {
+  margin: 5px 0 10px 0;
+}
+.timeline .events span {
+  position:relative;
+  display: inline-block;
+
+*/
+  /*border-left: 1px dotted var(--secondary);
+  border-right: 1px dotted var(--secondary);*/
+
+
+/*
+  border-bottom: 4px solid var(--color);
+  padding: 0 5px;
+}
+*/
+/*.timeline .events span:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 20px;
+  border-left: 1px dotted var(--secondary);
+}*/
+
+/*
+.timeline .events span.range {
+  width: calc((var(--to) - var(--from)) * 50px);
+}
+.timeline .events span.todate {
+  width:100%;
+}
+.timeline .events span h1 {
+  color: var(--color);
+  font-size: 12pt;
+  font-weight: 500;
+  padding: 0;
+}
+.timeline .events span h2 {
+  color: var(--secondary);
+  font-size: 10pt;
+  font-weight: 300;
+  padding:0;
+}
+*/

@@ -1,0 +1,65 @@
+
+/*
+  SITE THEME
+    Fonts, Colours and Images
+
+  See Material design guide for colours
+  https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+*/
+
+
+:root {
+  /* Define site colour scheme */
+  --background: #EEEEEE;      /* GREY 200 */
+  --surface: #FEFEFE;
+  --error: #B00020;
+  --primary: #42A5F5;         /* BLUE 400 */
+  --secondary: #757575;       /* GREY 600 */
+  --secondarydark: #424242;   /* GREY 800 */
+  --secondarylite: #E0E0E0;   /* GREY 300 */
+  --onbackground: black;
+  --onsurface: var(--secondary); 
+  --onerror: white;
+  --onprimary: black;
+  --onsecondary: black;
+  --onsecondarydark: white;
+  --onsecondarylite: black;
+  --transparent: rgba(255, 255, 255, 0.3);
+
+  /* Site font */
+  --titlefont: 'Saira Condensed', sans-serif;
+  --normalfont: 'Roboto', sans-serif;
+
+  /* Background image */
+  --backgroundimage: url(../img/background.png);
+}
+
+* {
+  font-family: var( --normalfont );
+}
+
+html, body {
+  background-color: var(--background );
+  background-image: var(--backgroundimage);
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+}
+
+h1, h2, h3 {
+  color: var( --primary );
+  font-family: var( --titlefont );
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+
+

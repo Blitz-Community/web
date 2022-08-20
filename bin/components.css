@@ -1,0 +1,50 @@
+
+/*
+  COMPONENT STYLES
+*/
+
+/* CARD AND PANEL */
+
+.card,
+.panel {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.card {
+  background-color: var(--surface);
+  color: var( --onsurface );
+}
+.panel {
+  background-color: var(--secondarylite);
+  color: var( --onsecondarylite );
+}
+.card h1, 
+.card h2 {
+  padding-bottom: 5px;
+}
+.panel h1, 
+.panel h2 {
+  padding-bottom: 5px;
+  color: var(--onsecondary);
+}
+.card a,
+.panel a {
+  color: var( --primary );
+  text-decoration: none;
+}
+.card a {
+  display: block;
+  color: var( --onsurface );
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 5px 5px 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted var(--secondarylite);
+}
+
+.card a:hover {
+  color: var( --primary );
+}
+
+
