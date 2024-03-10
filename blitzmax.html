@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" href="img/logo192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blitz Community Website">
-    <title>Blitz Community Website</title>
+    <title>BlitzMax</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
     <link href="bin/theme.css" rel="stylesheet">
     <link href="bin/components.css" rel="stylesheet">
     <link href="bin/timeline.css" rel="stylesheet">
+    <script src="js/site.js"></script>  
 </head>
 <body>
 
@@ -137,11 +138,11 @@
     <!-- LEFT SIDEBAR -->
 
     <aside id="leftcolumn">
-
+      
       <div class="card">
-        <h1>Blitz Community</h1>
+        <h1>Blitzmax</h1>
+        <p onclick="selectPane('pane-history');">History</p>
         <a target="blank" href="https://github.com/Blitz-Community/blitzmax/wiki">Wiki</a>
-        <a target="blank" href="https://github.com/Blitz-Community/Publications">Publications</a>
         <a target="blank" href="https://github.com/Blitz-Community/blitzmax/blob/main/code%20archive">Code archive</a>
         <a target="blank" href="https://github.com/Blitz-Community/blitzmax/discussions">Discussions board</a>
         <a target="blank" href="https://github.com/Blitz-Community/blitzmax/discussions/categories/tutorials">Tutorials</a>
@@ -169,7 +170,24 @@
         <!-- TOPIC CONTENT STARTS -->
 
         <div class="card">
-            <h1>Blitz Community</h1>
+            <h1>BlitzMax</h1>
+        </div>
+
+        <div id="pane-history" class="card pane">
+          <h1>History</h1>
+          <table>
+            <tr><th>Date<th>Version</th><th>Detail</th></tr>
+            <tr><td>2004<td>-</td><td>BlitzMax for MacOS</td></tr>
+            <tr><td>2005<td>-</td><td>Windows and Linux release</td></tr>
+            <tr><td>2007<td>1.26</td><td>Reflection</td></tr>
+            <tr><td>-<td>1.32</td><td>Threading and Lua</td></tr>
+            <tr><td>2015<td>1.51</td><td><a target="blank" href="https://github.com/blitz-research/blitzmax">BlitzMax Opensource</a></td></tr>
+            <tr><td>2018<td>-</td><td>BlitzMax-NG</td></tr>
+          </table>
+        </div>
+
+        <div id="pane-example" class="card pane">
+          <h1>EXAMPLE</h1>
         </div>
 
         <!-- TOPIC CONTENT ENDS -->
@@ -209,3 +227,4 @@
 
 </body>
 </html>
+

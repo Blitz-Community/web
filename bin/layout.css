@@ -41,32 +41,99 @@ header h1 {
   flex-grow: 1;
 }
 
-/* NAVIGATION */
+/* NEW NAVIGATION */
 
-nav#top,
-header nav,
-#main #content nav {
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: var(--transparent);
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 14px;
+  color: var(--onsurface);
+  text-align: center;
+  padding:5px 8px;
+  text-decoration: none;
+
+  margin: 5px 8px;
+  min-width: 80px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 14px;
+  outline: none;
+  color: var(--onsurface);
+  padding:5px 8px;
+  background-color: inherit;
+  font-family: inherit;
+
+  margin: 5px 8px;
+  min-width: 90px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 4px;
+
+}
+
+.subnav-content a span {
+  display:block;
+  font-size: 10px;
+  font-style: italic;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* TOP-RIGHT NAVIGATION */
+
+header nav {
   display: flex;
   flex-direction: row;
 }
-nav#top {
-  overflow-x: auto;
-}
-nav#top a {
-  background-color: var(--transparent);
-  color: var(--onsurface);
-  font-size:14px;
-  text-decoration: none;
-  text-align: center;
-  margin: 5px 8px;
-  width: 80px;
-  border: 1px solid var(--primary);
-  border-radius: 4px;
-  padding:5px 8px;
-  white-space: nowrap;
-}
-header nav a,
-#main #content nav a {
+header nav a {
   color: var(--onbackground);
   font-size:12px;
   text-decoration: none;
@@ -75,18 +142,13 @@ header nav a,
   border-bottom: 4px solid var(--secondarylite);
   white-space: nowrap;
 }
-nav#top a:hover {
-  background-color: var(--primary);
-  color: var(--onprimary);
-}
-header nav a:hover,
-#main #content nav a:hover {
+header nav a:hover {
   border-bottom: 4px solid var(--primary);
 }
 
-/* Navigation tooltips */
+/* NAVIGATION TOOLTIPS */
 
-nav#top .tooltip .tooltiptext {
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 180px;
   background-color: var(--secondarydark);
@@ -100,21 +162,18 @@ nav#top .tooltip .tooltiptext {
   z-index: 1;
 }
 
-nav#top .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
   visibility: visible;
 }
-nav#top .tooltipright {
-  /*top: 135%;*/
-  /*left: 50%;  */
+nav#top .tooltipright, .tooltipright {
   margin-left: -10px;
   margin-top: 10px;
 }
-nav#top .tooltipleft {
-  /*top: 135%;*/
-  /*left: 50%;  */
+nav#top .tooltipleft, .tooltipleft {
   margin-left: -100px;
   margin-top: 10px;
 }
+
 /* FOOTER */
 footer {
   display: flex;
@@ -147,7 +206,7 @@ footer p.copyright {
 section#main {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
 /* LEFT PANEL */
@@ -221,6 +280,13 @@ section#main aside#rightcolumn {
   height: 100%;
 }
 
+/* PANES */
+.pane {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
 
 /* MISC */
 
